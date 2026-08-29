@@ -1,0 +1,15 @@
+
+COMANDOS DE INSTALACIÓN DEL PROYECTO
+
+1. Instalar AsyncStorage (Para almacenamiento local):
+npx expo install @react-native-async-storage/async-storage
+
+2. Instalar Íconos (Expo Vector Icons):
+npx expo install @expo/vector-icons
+
+----------------------------------------
+3. Reinstalar todas las dependencias del proyecto:
+npm install
+
+4. Iniciar el proyecto en Expo:
+npx expo start
