@@ -1,0 +1,6 @@
+{
+  "plugins": [
+    "expo-font",
+    "@react-native-community/datetimepicker"
+  ]
+}

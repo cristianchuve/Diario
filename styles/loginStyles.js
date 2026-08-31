@@ -111,5 +111,21 @@ export const styles = StyleSheet.create({
     fontWeight: '700',
     fontSize: 16,
   },
+  biometricButton: {
+    marginTop: 16,
+    alignItems: 'center',
+    justifycontent: 'center',
+    paddingVertical: 12,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: '#9333EA',
+    backgroundColor: '#F3E8FF', // Morado suave de fondo
+  },
+  biometricText: {
+    marginTop: 6,
+    color: '#9333EA',
+    fontSize: 14,
+    fontWeight: '600',
+  },
 
 });

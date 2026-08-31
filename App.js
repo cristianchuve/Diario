@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import LoginScreen from './LoginScreen';
-import RegisterScreen from './RegisterScreen';
-import DiarioScreen from './DiarioScreen';
+import LoginScreen from './views/LoginScreen';
+import RegisterScreen from './views/RegisterScreen';
+import DiarioScreen from './views/DiarioScreen';
 
 export default function App() {
   const [pantalla, setPantalla] = useState('login');

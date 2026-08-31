@@ -1,7 +1,6 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-
   // Contenedor principal de la pantalla
   container: {
     flex: 1,
@@ -13,13 +12,14 @@ export const styles = StyleSheet.create({
     paddingBottom: 30,
   },
 
-  // Encabezado superior
+  // Encabezado superior adaptativo
   header: {
-    minHeight: 78,
+    minHeight: 70,
     backgroundColor: '#171515',
     borderBottomWidth: 1,
     borderBottomColor: '#292525',
-    padding: 14,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -29,24 +29,27 @@ export const styles = StyleSheet.create({
   brand: {
     flexDirection: 'row',
     alignItems: 'center',
+    flex: 1, // Ocupa el espacio disponible a la izquierda
+    marginRight: 8,
   },
 
   // Botón del menú lateral
   menuButton: {
-    width: 50,
-    height: 50,
-    borderRadius: 14,
+    width: 44,
+    height: 44,
+    borderRadius: 12,
     borderWidth: 1,
     borderColor: '#45403C',
+    backgroundColor: '#262422',
     justifyContent: 'center',
     alignItems: 'center',
-    marginRight: 12,
+    marginRight: 10,
   },
 
   // Título de la aplicación
   appTitle: {
     color: '#FFF',
-    fontSize: 24,
+    fontSize: 19,
     fontWeight: '800',
   },
 
@@ -54,29 +57,38 @@ export const styles = StyleSheet.create({
   headerUser: {
     color: '#AAA',
     fontSize: 12,
-    marginTop: 2,
+    marginTop: 1,
+  },
+
+  // Contenedor de los botones de la derecha (Calendario + Nueva Entrada)
+  headerActions: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
   },
 
   // Botón para crear una nueva entrada
   newButton: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 7,
+    gap: 6,
     backgroundColor: '#C95700',
-    paddingHorizontal: 15,
-    paddingVertical: 12,
-    borderRadius: 15,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    borderRadius: 12,
+    height: 44,
   },
 
   // Texto del botón nueva entrada
   newButtonText: {
     color: '#FFF',
+    fontSize: 13,
     fontWeight: '700',
   },
 
   // Contenedor del buscador
   search: {
-    margin: 18,
+    margin: 16,
     height: 48,
     borderRadius: 14,
     borderWidth: 1,
@@ -85,7 +97,6 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 14,
-    
   },
 
   // Campo de texto del buscador
@@ -99,7 +110,7 @@ export const styles = StyleSheet.create({
   // Encabezado de la sección
   sectionHeader: {
     paddingHorizontal: 18,
-    marginBottom: 18,
+    marginBottom: 14,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'flex-end',
@@ -108,18 +119,16 @@ export const styles = StyleSheet.create({
   // Título de la sección
   sectionTitle: {
     color: '#FFF',
-    fontSize: 31,
+    fontSize: 26,
     fontWeight: '800',
   },
 
   // Contador de entradas
   counter: {
     color: '#AAA',
-    marginTop: 5,
-    fontSize: 14,
+    marginTop: 4,
+    fontSize: 13,
   },
-
-  
 
   // Contenedor de las tarjetas
   cards: {
@@ -145,7 +154,7 @@ export const styles = StyleSheet.create({
   // Título de la entrada
   cardTitle: {
     color: '#FFF',
-    fontSize: 21,
+    fontSize: 20,
     fontWeight: '800',
     marginBottom: 12,
   },
@@ -161,8 +170,8 @@ export const styles = StyleSheet.create({
   // Texto o resumen de la entrada
   snippet: {
     color: '#E8E2DF',
-    fontSize: 16,
-    lineHeight: 24,
+    fontSize: 15,
+    lineHeight: 22,
   },
 
   // Parte inferior de la tarjeta
@@ -191,22 +200,22 @@ export const styles = StyleSheet.create({
     borderColor: '#4A4541',
     borderRadius: 12,
     paddingHorizontal: 9,
-    paddingVertical: 5,
+    paddingVertical: 4,
     fontSize: 12,
   },
 
-  // Contenedor de botones de acción
+  // Contenedor de botones de acción de tarjeta
   actions: {
     flexDirection: 'row',
-    gap: 18,
+    gap: 16,
     marginLeft: 10,
   },
-// Estado de ánimo de la entrada
-  moodBadge: {
-  color: '#F59E0B',
-  fontSize: 13,
-  fontWeight: '600',
-  marginBottom: 4,
-},
 
+  // Estado de ánimo de la entrada
+  moodBadge: {
+    color: '#F59E0B',
+    fontSize: 13,
+    fontWeight: '600',
+    marginBottom: 4,
+  },
 });
