@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const API_BASE_URL = 'http://192.168.0.18:5000/api'; // Ajusta según la IP o dominio de tu servidor
+const API_BASE_URL = 'http://10.33.195.104:5000/api'; // Ajusta según la IP o dominio de tu servidor
 
 const getAuthHeaders = async () => {
   const token = await AsyncStorage.getItem('token');

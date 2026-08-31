@@ -15,6 +15,7 @@ import { postLogin } from '../api/AuthApi';
 import { autenticarConBiometria } from '../components/biometria'; // Ajusta la ruta a tu helper
 
 export default function LoginScreen({ onLoginSuccess, onNavigateToRegister }) {
+  //const [nombre, setNombre] = useState('');
   const [correo, setCorreo] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -72,7 +73,7 @@ export default function LoginScreen({ onLoginSuccess, onNavigateToRegister }) {
     }
   };
 
-  // 3. Inicio de sesión mediante Huella / FaceID
+  
   const handleLoginConHuella = async () => {
     const exito = await autenticarConBiometria('Ingresa a tu Diario Íntimo');
 

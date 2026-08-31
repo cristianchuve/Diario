@@ -1,8 +1,8 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const API_LOGIN_URL = 'http://192.168.0.18:5000/api/auth/login';
-const API_REGISTER_URL = 'http://192.168.0.18:5000/api/auth/register';
-const API_USER_URL = 'http://192.168.0.18:5000/api/auth';
+const API_LOGIN_URL = 'http://10.33.195.104:5000/api/auth/login';
+const API_REGISTER_URL = 'http://10.33.195.104:5000/api/auth/register';
+const API_USER_URL = 'http://10.33.195.104:5000/api/auth';
 
 export async function postLogin(email, password) {
   const respuesta = await fetch(API_LOGIN_URL, {
